@@ -30,12 +30,6 @@ const RegisterPage = () => {
       }
     );
 
-    const responseAPI = await res.json();
-
-    if (!res.ok) {
-      setErrors([responseAPI.message]);
-      return;
-    }
 
     const responseNextAuth = await signIn("credentials", {
       email,
@@ -58,7 +52,7 @@ const RegisterPage = () => {
         <input
           type="text"
           placeholder="Nombre de usuario"
-          name="username" // Cambiado de 'name' a 'username'
+          name="username" 
           className="form-control mb-2"
           value={username}
           onChange={(event) => setUsername(event.target.value)}

@@ -36,7 +36,7 @@ const LoginPage = () => {
       <form onSubmit={handleSubmit}>
         <input
           type="email"
-          placeholder="test@test.com"
+          placeholder="Ingrese el email con el que se registró"
           name="email"
           className="form-control mb-2"
           value={email}
@@ -44,7 +44,7 @@ const LoginPage = () => {
         />
         <input
           type="password"
-          placeholder="123123"
+          placeholder="Contraseña"
           name="password"
           className="form-control mb-2"
           value={password}
